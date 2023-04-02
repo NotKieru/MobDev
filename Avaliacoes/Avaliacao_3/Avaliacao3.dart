@@ -27,16 +27,15 @@ void main(List<String> args) {
   print(y); // Resultado == 3, o operador *= é a mesma coisa que y = y * 3
 
 
-  print("6) Qual o resultado da expressão !(2 < 5) || (3 > 1)?");
+  print("\n 6) Qual o resultado da expressão !(2 < 5) || (3 > 1)?");
   bool d = !(2 < 5) || (3 > 1);
   print(d); // Resultado == true, o operador ! inverte o valor booleano e o || é o operador lógico OU que retorna true se pelo menos uma das expressões for true
 
 
   print("\n7) Qual o valor de z após a execução da expressão z ?? 10?");
   int? z;
-  z ??= 10;
-  print(z); /* Resultado == 10, o operador ??= é a mesma coisa que z = z ?? 10 e o operador ?? é o o mesmo que "if null" e retorna o valor da variável se ela não for nula, caso contrário retorna o valor que vem depois do operador*/
-
+  z ?? 10;
+  print(z); // Resultado == null, pois a variável z é nula e o operador ?? retorna o valor da variável se ela não for nula
 
   print("\n8) Qual o resultado da expressão 2 + 2 == 4 && 3 + 3 == 6?");
   bool e = 2 + 2 == 4 && 3 + 3 == 6;
